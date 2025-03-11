@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+    <div class="quiz">
+      <div class="question-number">
+        Question <span class="question-circle" id="question-number">1</span>
+      </div>
+      <div class="question">What is the capital of France?</div>
+      <ul class="choices">
+        <li data-answer="false">Berlin</li>
+        <li data-answer="true">Paris</li>
+        <li data-answer="false">Madrid</li>
+        <li data-answer="false">Rome</li>
+      </ul>
+      <button class="btn" id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+    </div>
+
+    <div class="result">
+      <h2>Congratulations!</h2>
+      <p>You answered <span id="score"></span> questions correctly out of <span id="total"></span>.</p>
+      <button class="btn" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
